@@ -1,0 +1,533 @@
+/* Universal Styles */
+
+html {
+  font-size: 16px;
+  background-color: #FEFEFE;
+}
+
+p {
+  line-height: 1.6;
+  font-family: "Open+Sans", sans-serif;
+}
+
+h5 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  font-family: "Montserrat";
+  color: #272F35;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 1rem 0rem;
+  font-family: "Montserrat";
+  color: #272F35;
+}
+
+h4 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  font-family: "Montserrat";
+  color: #272F35;
+}
+
+h2 {
+  font-size: 3rem;
+  line-height: 1.2;
+  padding-right: 50px;
+  font-weight: bold;
+  font-family: "Montserrat";
+  color: #272F35;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  margin-top: 1.5rem;
+  font-family: "Montserrat";
+  color: #272F35;
+}
+
+span {
+  font-weight: bold;
+  line-height: 1.6;
+  font-family: "Open+Sans", sans-serif;
+}
+
+.item a {
+  font-family: "Open+Sans", sans-serif;
+  margin-top: 1rem;
+}
+
+/* Header */
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px #DCE3E7 solid;
+  top: 0px;
+  height: 64px;
+  width:100%;
+  position: fixed;
+  background-color: #FEFEFE;
+}
+
+nav div {
+  display: flex;
+  align-items: center;
+}
+
+nav img {
+  height: 44px;
+  padding-left: 24px;
+}
+
+nav ul {
+  margin-right: 24px;
+}
+
+nav li {
+  display: inline;
+  padding-left: 16px;
+}
+
+.menu li:hover {
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 1rem;
+  color:#A4A7A9;
+}
+
+.menu li {
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 1rem;
+  color: #272F35;
+  text-transform: uppercase;
+}
+
+.menu li:last-child {
+  color: #64AFF1;
+}
+
+.logo span {
+  font-size: 1.4rem;
+}
+
+.academy {
+  color:#A4A7A9;
+}
+
+.truncated-menu {
+  display: none;
+}
+
+@media only screen and (max-width: 700px) {
+  .menu ul {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .menu ul {
+    display: none;
+  }
+
+  .logo ul.truncated-menu {
+    display: flex;
+  }
+
+  .logo span {
+    display: none;
+  }
+  .container {
+    justify-content: center;
+  }
+}
+
+/* Banner */
+
+#banner {
+background-color: #DCE3E7;
+display: flex;
+justify-content: space-between;
+align-items: center;
+height: auto;
+margin-top: 64px;
+}
+
+.banner-img {
+  width: 100%;
+}
+
+.banner-img img {
+  max-width: 100%;
+  max-height: auto;
+}
+
+.banner-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.cta span{
+  background-color: #64AFF1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+  margin: 2rem 0;
+  border-radius: 5px;
+  font-size: 1.4rem;
+  transition-duration: 1s;
+  transition-property: color;
+}
+
+.cta span:hover {
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 560px) {
+  #banner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .banner-img {
+    width: auto;
+  }
+  .banner-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:16px 16px;
+    width: auto;
+  }
+
+  h2 {
+    font-size: 2rem;
+    line-height: 1.2;
+    padding-right: 50px;
+    font-weight: bold;
+    font-family: "Montserrat";
+    color: #272F35;
+  }
+
+  h1 {
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-top: 1rem;
+    font-family: "Montserrat";
+    color: #272F35;
+  }
+  .cta span{
+    background-color: #64AFF1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 0;
+    margin: 32px 0;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition-duration: 1s;
+    transition-property: color;
+  }
+}
+
+/* Features */
+
+#features {
+  display: flex;
+  height: auto;
+  background-color: #FAFBFC;
+}
+
+.feature-story {
+  display: flex;
+  flex-direction: column;
+  padding: 32px 24px;
+  width: 60%;
+}
+
+.main-story {
+  display: flex;
+  flex-direction: column;
+  padding: 32px 24px;
+  width: 60%;
+}
+
+.mobile {
+  display: none;
+}
+
+.stories {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  padding: 0px 32px;
+}
+
+.stories .item {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 2px #DCE3E7 solid;
+}
+
+.stories .item:hover {
+  background-color: #DCE3E7;
+}
+
+.item img {
+  width:35%;
+  height: auto;
+  padding: 32px 16px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  line-height: 1.5;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+}
+
+p.source {
+  padding-top: 2rem;
+  font-style: italic;
+}
+
+.text a {
+  color: #64AFF1;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 560px) {
+  .feature-story {
+    display: none;
+  }
+  .stories {
+    width: auto;
+    padding: 0px;
+  }
+  .stories.item,.desktop {
+    display: none;
+  }
+  .stories.item,.mobile {
+    display: block;
+    width:100%;
+  }
+  .text {
+    width: auto;
+  }
+  .main-story {
+    width: 100%;
+    padding: 0px;
+  }
+  .item img {
+    width: 100%;
+    padding: 0px;
+  }
+  .stories .item {
+    display: flex;
+    flex-direction: column;
+    border:none;
+  }
+  .mobile img {
+    padding: 0px;
+  }
+  .item {
+    padding: 16px 16px;
+  }
+  .item .text {
+    width:100%;
+  }
+
+  h5 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin: 1rem 0rem;
+    font-family: "Montserrat";
+    color: #272F35;
+  }
+}
+
+/* Learning */
+
+.title-learn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 32px;
+  background-color: #DCE3E7;
+}
+
+#boxes {
+  padding: 32px 72px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #DCE3E7;
+}
+
+.course img {
+  width: 100%;
+  height: auto;
+}
+
+.course {
+  margin: 10px;
+  width: 25%;
+  height: auto;
+  display: block;
+  flex-direction: row;
+  background-color: white;
+}
+
+.course-text {
+  padding: 16px 16px;
+  margin-bottom: 10px;
+}
+
+
+@media only screen and (max-width: 560px) {
+  #boxes {
+    background-color: #FAFBFC;
+    width: 100%;
+    padding: 0px;
+  }
+  .course {
+  display: block;
+  width: 100%;
+  }
+  .course img {
+    display: none;
+  }
+  .course p {
+    display: none;
+  }
+  .course span {
+    display: none;
+  }
+  .course-text {
+  padding: 0px 0px;
+  }
+
+  .course,h4 {
+    font-weight: bold;
+    font-family: "Montserrat";
+    color: #272F35;
+    font-weight: 600;
+    padding: 0.5rem;
+    margin: 5px 10px;
+    font-size: 1.2rem;
+    background-color: #64AFF1;
+  }
+
+  .course,h4:hover {
+    font-family: "Montserrat";
+    color: white;
+    background-color: #64AFF1;
+    font-weight: 600;
+    padding: 0.5rem;
+    margin: 5px 10px;
+    font-size: 1.2rem;
+  }
+  .title-learn {
+    background-color: #FAFBFC;
+    padding: 32px 0px;
+  }
+}
+
+/* Thesis */
+
+#thesis {
+  display: flex;
+  height: auto;
+  padding-bottom: 32px;
+  background-color: #FAFBFC;
+}
+
+.banner-video {
+  width: 100%;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  padding: 0px 32px;
+}
+
+.sidebar .item {
+  display: flex;
+  min-height: 150px;
+  flex-direction: row;
+  border-bottom: 2px #DCE3E7 solid;
+}
+
+.title-thesis {
+  text-align: center;
+  padding: 32px;
+  background-color: #FAFBFC
+}
+
+@media only screen and (max-width: 560px) {
+  .sidebar {
+    display: none;
+  }
+  .text-video {
+    display: none;
+  }
+  .main-story {
+    width: 100%;
+    padding: 0px;
+  }
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 2px #DCE3E7 solid;
+  padding: 16px 24px;
+  background-color: #FEFEFE;
+  color: #272F35;
+}
+
+.last {
+  display: block;
+  padding-left: 16px;
+}
+
+.last li a{
+  font-family: "Montserrat";
+  color: #272F35;
+}
+
+@media only screen and (max-width: 560px) {
+  .last li a{
+    display: none;
+  }
+  footer p {
+    font-size: 0.7rem;
+  }
+}
